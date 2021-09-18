@@ -66,6 +66,6 @@ jobs:
       - name: Git Push
         run: |
           git remote rename origin upstream
-          git remote add origin https://github.com/benauca/test-adobe-site
+          git remote add origin https://github.com/benauca/test-adobe-site.git
           git push origin test-site-01
     
