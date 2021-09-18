@@ -33,10 +33,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
       - name: Security Sast
         run: |
           echo Add other Test Sast Security
           echo Fortify Test successfull
+
   createTag:
     needs:
       - release
@@ -59,6 +61,7 @@ jobs:
     needs:
       - createTag
     runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: Git Push
         run: |
