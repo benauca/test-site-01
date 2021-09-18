@@ -68,7 +68,5 @@ jobs:
           git remote rename origin upstream
           git remote add origin https://github.com/benauca/test-adobe-site.git
           git status
-          git add .
-          git commit -m "Sure Commit"
-          git push origin test-site-01
+          git push origin main
     
