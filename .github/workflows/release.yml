@@ -68,5 +68,5 @@ jobs:
           # git remote rename origin upstream
           # git remote add origin 
           git checkout -b test-site-01
-          git push https://{{ secrets.bnauk_token }}@github.com/benauca/test-adobe-site.git test-site-01
+          git push https://${{secrets.bnauk_token}}@github.com/benauca/test-adobe-site.git test-site-01
     
